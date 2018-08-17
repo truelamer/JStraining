@@ -14,22 +14,18 @@ for (let i = 1; i < 101; i++)
     }
 }
 console.log("--------- \n Исправленная \n---------");
+
 for (let i = 1; i < 101; i++)
 {
-    if ((i % 3) ==0 && (i % 5) == 0)
+    let res = i + " ";
+
+    if ((i % 3) == 0)
     {
-        console.log(i + " FizzBuzz");
+        res += "Fizz"
     }
-    else if ((i % 3) == 0)
+    if ((i % 5) == 0)
     {
-        console.log(i + " Fizz");
+        res += "Buzz";
     }
-    else if ((i % 5) == 0)
-    {
-        console.log(i + " Buzz");
-    }
-    else
-    {
-        console.log(i);
-    }
+    console.log(res);
 }

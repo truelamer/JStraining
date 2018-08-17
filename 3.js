@@ -5,15 +5,17 @@ for (let i = 0; i < size; i++)
 {
     for (let j = 0; j < size / 2; j++)
     {
-        result += "# ";
+        if (i % 2 == 1)
+        {
+            result += " ";
+            result += "#";
+        }
+        else
+        {
+            result += "#";
+            result += " ";
+        }
     }
-    if (i % 2 == 0)
-    {
-        result += "\n ";
-    }
-    else
-    {
-        result += "\n";
-    }
+    result += "\n";
 }
 console.log(result);

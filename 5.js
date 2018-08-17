@@ -1,5 +1,6 @@
 function isEven(a)
 {
+    a = (a < 0) ? -a : a;
     if ((a == 1) || (a == 0))
     {
         return !a;
@@ -10,6 +11,6 @@ function isEven(a)
     }
 }
 
-console.log(isEven(75));
+console.log(isEven(-75));
 
 //если работать с Math.abs(a), то для отрицательных чисел тоже все корректно
