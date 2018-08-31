@@ -4,7 +4,7 @@ function reverseArray(arr)
     let arrLength = arr.length;
     for (let i = arrLength - 1; i >= 0; i--)
     {
-        tmp[arrLength - 1 - i] = arr[i];
+        tmp.push(arr[i]);
     }
     return(tmp);
 }

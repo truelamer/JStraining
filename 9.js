@@ -19,10 +19,7 @@ function listToArray(list)
 
 function prepend(elm, list)
 {
-    let list_new = {};
-    list_new.value = elm;
-    list_new.rest = list;
-    return (list_new);
+    return ({value: elm, rest: list});
 }
 
 function nth(list, number)
