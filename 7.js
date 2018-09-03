@@ -22,10 +22,9 @@ function range(start, end, step = 1)
 function sum(arr)
 {
     let sum = 0;
-    arr.forEach(function (elm, i, arr) {
-        sum += elm;
+    return arr.reduce(function (sum, current) {
+        return sum + current;
     });
-    return sum;
 }
 
 console.log(sum(range(2, 6)));
